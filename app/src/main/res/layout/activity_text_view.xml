@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天哥在裸奔"
+        android:textColor="#000"
+        android:textSize="24sp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="天哥在裸奔"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:drawableRight="@drawable/icon_arrow_off"
+        android:drawablePadding="5dp"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天哥在裸奔"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天哥在裸奔"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天哥在裸奔"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天哥在裸奔，天上的风筝掉下来了，天气真好呀"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="-1"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#f00"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        >
+
+    </TextView>
+
+
+
+</LinearLayout>
