@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.skypan.helloworld.gridview.GridViewActivity;
 import com.skypan.helloworld.listview.ListViewActivity;
+import com.skypan.helloworld.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mBtnTextView;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mImageView;
     private Button mListView;
     private Button mGridview;
+    private Button mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mImageView = findViewById(R.id.btn_imageview);
         mListView = findViewById(R.id.btn_mListview);
         mGridview = findViewById(R.id.btn_mGridview);
+        mRecyclerView = findViewById(R.id.rv_main);
 
         setListeners();
     }
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mImageView.setOnClickListener(onClick);
         mListView.setOnClickListener(onClick);
         mGridview.setOnClickListener(onClick);
+        mRecyclerView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener{
@@ -78,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
 
                 case R.id.btn_mGridview:
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+
+                case R.id.rv_main:
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);

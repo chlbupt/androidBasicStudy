@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.skypan.helloworld">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
+        <activity
+            android:name=".recyclerview.RecyclerViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerview.LinearRecyclerViewActivity"
+            android:exported="true" />
         <activity
             android:name=".ImageViewActivity"
             android:exported="true" />
@@ -28,10 +35,12 @@
         <activity
             android:name=".TextViewActivity"
             android:exported="true" />
-        <activity android:name=".listview.ListViewActivity"
-            android:exported="true"/>
-        <activity android:name=".gridview.GridViewActivity"
-            android:exported="true"/>
+        <activity
+            android:name=".listview.ListViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".gridview.GridViewActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
