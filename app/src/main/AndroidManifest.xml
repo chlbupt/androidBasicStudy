@@ -10,7 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HelloWorld">
+        android:theme="@style/Theme.HelloWorld"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="true" />
         <activity
             android:name=".recyclerview.RecyclerViewActivity"
             android:exported="true" />
