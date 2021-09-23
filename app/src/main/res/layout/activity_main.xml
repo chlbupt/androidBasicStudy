@@ -1,71 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     >
-
-    <Button
-        android:id="@+id/btn_textview"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        />
+        >
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            />
 
-    <Button
-        android:id="@+id/btn_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        />
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            />
 
-    <Button
-        android:id="@+id/btn_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="EditText"
-        android:textAllCaps="false"
-        />
+        <Button
+            android:id="@+id/btn_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EditText"
+            android:textAllCaps="false"
+            />
 
-    <Button
-        android:id="@+id/btn_radiobutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RadioButton"
-        android:textAllCaps="false"
-        />
+        <Button
+            android:id="@+id/btn_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textAllCaps="false"
+            />
 
-    <Button
-        android:id="@+id/btn_checkbox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        android:textAllCaps="false"
-        />
+        <Button
+            android:id="@+id/btn_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textAllCaps="false"
+            />
 
-    <Button
-        android:id="@+id/btn_imageview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ImageView"
-        android:textAllCaps="false"
-        />
+        <Button
+            android:id="@+id/btn_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageView"
+            android:textAllCaps="false"
+            />
 
-    <Button
-        android:id="@+id/btn_mListview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ListView"
-        android:textAllCaps="false"
-        />
+        <Button
+            android:id="@+id/btn_mListview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ListView"
+            android:textAllCaps="false"
+            />
 
-    <Button
-        android:id="@+id/btn_mGridview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="GridView"
-        android:textAllCaps="false"
-        />
+        <Button
+            android:id="@+id/btn_mGridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GridView"
+            android:textAllCaps="false"
+            />
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test"
+                    android:textAllCaps="false"
+                    />
 
-</LinearLayout>
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>
