@@ -13,6 +13,7 @@
         <entry key="..\:/android/HelloWorld/app/src/main/res/drawable/selector_orange_radiobutton.xml" value="0.33796296296296297" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_button.xml" value="0.19791666666666666" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_check_box.xml" value="0.3125" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_dialog.xml" value="0.1308876811594203" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_edit_text.xml" value="0.1" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_gridview.xml" value="0.25" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_image_view.xml" value="0.25" />
@@ -20,13 +21,18 @@
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_linear_rcecler_view.xml" value="0.19791666666666666" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_listview.xml" value="0.3125" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_main2.xml" value="0.296195652173913" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_radio_button.xml" value="0.19791666666666666" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_recycler_view.xml" value="0.19791666666666666" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_text_view.xml" value="0.19791666666666666" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_toast.xml" value="0.30027173913043476" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_ui.xml" value="0.17299898682877407" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_web_view.xml" value="0.30027173913043476" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/bg_username.xml" value="0.17299898682877407" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/layout_dialog.xml" value="0.17299898682877407" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/layout_grid_item.xml" value="0.13903985507246377" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/layout_list_item.xml" value="0.25" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/layout_toast.xml" value="0.24444444444444444" />
       </map>
     </option>
   </component>
@@ -35,5 +41,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.24444444444444444" />
+      </ProjectState>
+    </option>
   </component>
 </project>

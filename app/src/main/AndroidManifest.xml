@@ -11,8 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld"
-        android:usesCleartextTraffic="true"
-        >
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".DialogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ToastActivity"
+            android:exported="true" />
         <activity
             android:name=".WebViewActivity"
             android:exported="true" />
@@ -45,6 +51,9 @@
             android:exported="true" />
         <activity
             android:name=".gridview.GridViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UIActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
