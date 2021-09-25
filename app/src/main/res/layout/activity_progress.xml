@@ -82,4 +82,13 @@
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         />
+
+    <Button
+        android:id="@+id/btn_progress_dialog3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar3"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
 </LinearLayout>
