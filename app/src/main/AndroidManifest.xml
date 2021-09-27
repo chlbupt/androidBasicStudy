@@ -13,6 +13,12 @@
         android:theme="@style/Theme.HelloWorld"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".PopupWindowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CustomDialogActivity"
+            android:exported="true" />
+        <activity
             android:name=".ProgressActivity"
             android:exported="true" />
         <activity
