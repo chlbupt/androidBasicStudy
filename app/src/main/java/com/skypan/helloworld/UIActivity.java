@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.skypan.helloworld.fragment.ContainerActivity;
 import com.skypan.helloworld.gridview.GridViewActivity;
 import com.skypan.helloworld.jump.AActivity;
 import com.skypan.helloworld.listview.ListViewActivity;
@@ -30,6 +31,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnPop;
     private Button mBtnLifeCycle;
     private Button mBtnJump;
+    private Button mBtnFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnPop = findViewById(R.id.btn_pop);
         mBtnLifeCycle = findViewById(R.id.btn_lifeCycle);
         mBtnJump = findViewById(R.id.btn_jump);
+        mBtnFragment = findViewById(R.id.btn_fragment);
 
         setListeners();
     }
@@ -75,6 +78,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnPop.setOnClickListener(onClick);
         mBtnLifeCycle.setOnClickListener(onClick);
         mBtnJump.setOnClickListener(onClick);
+        mBtnFragment.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener{
@@ -137,6 +141,10 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_jump:
                     intent = new Intent(UIActivity.this, AActivity.class);
+                    break;
+
+                case R.id.btn_fragment:
+                    intent = new Intent(UIActivity.this, ContainerActivity.class);
                     break;
             }
             startActivity(intent);

@@ -17,6 +17,7 @@
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_bactivity.xml" value="0.22" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_button.xml" value="0.19791666666666666" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_check_box.xml" value="0.3125" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_container.xml" value="0.27309782608695654" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_custom_dialog.xml" value="0.2826086956521739" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_dialog.xml" value="0.1308876811594203" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_edit_text.xml" value="0.1" />
@@ -37,6 +38,8 @@
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_ui.xml" value="0.24444444444444444" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/activity_web_view.xml" value="0.30027173913043476" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/bg_username.xml" value="0.17299898682877407" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/fragment_a.xml" value="0.27309782608695654" />
+        <entry key="..\:/android/HelloWorld/app/src/main/res/layout/fragment_b.xml" value="0.10778985507246377" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/layout_custom_dialog.xml" value="0.11730072463768115" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/layout_dialog.xml" value="0.17299898682877407" />
         <entry key="..\:/android/HelloWorld/app/src/main/res/layout/layout_grid_item.xml" value="0.13903985507246377" />
@@ -56,7 +59,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.22" />
+        <option name="scale" value="0.27309782608695654" />
       </ProjectState>
     </option>
   </component>

@@ -13,19 +13,22 @@
         android:theme="@style/Theme.HelloWorld"
         android:usesCleartextTraffic="true">
         <activity
-            android:label="BActivity"
+            android:name=".fragment.ContainerActivity"
+            android:exported="true" />
+        <activity
             android:name=".jump.BActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:label="BActivity">
             <intent-filter>
-                <action android:name="com.skypan.test.BActivity"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
+                <action android:name="com.skypan.test.BActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:launchMode="singleTask"
-            android:label="AActivity"
             android:name=".jump.AActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="AActivity" />
         <activity
             android:name=".LifeCycleActivity"
             android:exported="true" />
