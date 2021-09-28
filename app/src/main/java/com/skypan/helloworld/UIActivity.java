@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.skypan.helloworld.gridview.GridViewActivity;
+import com.skypan.helloworld.jump.AActivity;
 import com.skypan.helloworld.listview.ListViewActivity;
 import com.skypan.helloworld.recyclerview.RecyclerViewActivity;
 
@@ -27,6 +28,8 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnProgress;
     private Button mBtnCustomDialog;
     private Button mBtnPop;
+    private Button mBtnLifeCycle;
+    private Button mBtnJump;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,8 @@ public class UIActivity extends AppCompatActivity {
         mBtnProgress =findViewById(R.id.btn_progress);
         mBtnCustomDialog = findViewById(R.id.btn_custom_dialog);
         mBtnPop = findViewById(R.id.btn_pop);
+        mBtnLifeCycle = findViewById(R.id.btn_lifeCycle);
+        mBtnJump = findViewById(R.id.btn_jump);
 
         setListeners();
     }
@@ -68,6 +73,8 @@ public class UIActivity extends AppCompatActivity {
         mBtnProgress.setOnClickListener(onClick);
         mBtnCustomDialog.setOnClickListener(onClick);
         mBtnPop.setOnClickListener(onClick);
+        mBtnLifeCycle.setOnClickListener(onClick);
+        mBtnJump.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener{
@@ -124,6 +131,12 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_pop:
                     intent = new Intent(UIActivity.this, PopupWindowActivity.class);
+                    break;
+                case R.id.btn_lifeCycle:
+                    intent = new Intent(UIActivity.this, LifeCycleActivity.class);
+                    break;
+                case R.id.btn_jump:
+                    intent = new Intent(UIActivity.this, AActivity.class);
                     break;
             }
             startActivity(intent);
