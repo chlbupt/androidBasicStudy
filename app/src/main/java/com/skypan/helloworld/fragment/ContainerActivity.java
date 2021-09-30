@@ -10,24 +10,22 @@ import com.skypan.helloworld.R;
 
 public class ContainerActivity extends AppCompatActivity {
     private AFragment aFragment;
-    private BFragment bFragment;
-    private Button mBtnChange;
+    private TextView mTvTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
-        mBtnChange = findViewById(R.id.btn_change);
+        mTvTitle = findViewById(R.id.tv_title);
 
 //        AFragment aFragment = new AFragment();
-        AFragment aFragment = AFragment.newInstance("我是newInstance");
-        getSupportFragmentManager().beginTransaction().add(R.id.fl_container, aFragment).commitAllowingStateLoss();
+        aFragment = AFragment.newInstance("我是AFragment的newInstance");
+        getSupportFragmentManager().beginTransaction().add(R.id.fl_container, aFragment, "a").commitAllowingStateLoss();
 
-        mBtnChange.setOnClickListener((v) -> {
-            if(null == bFragment){
-                bFragment = new BFragment();
-            }
-            getSupportFragmentManager().beginTransaction().replace(R.id.fl_container, bFragment).commitAllowingStateLoss();
-        });
+
+    }
+
+    public void setData(String message){
+        mTvTitle.setText(message);
     }
 }
