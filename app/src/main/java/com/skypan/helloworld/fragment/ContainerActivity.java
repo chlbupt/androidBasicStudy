@@ -19,7 +19,8 @@ public class ContainerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_container);
         mBtnChange = findViewById(R.id.btn_change);
 
-        AFragment aFragment = new AFragment();
+//        AFragment aFragment = new AFragment();
+        AFragment aFragment = AFragment.newInstance("我是newInstance");
         getSupportFragmentManager().beginTransaction().add(R.id.fl_container, aFragment).commitAllowingStateLoss();
 
         mBtnChange.setOnClickListener((v) -> {
