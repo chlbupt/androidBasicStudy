@@ -10,14 +10,17 @@ import android.widget.Button;
 import com.skypan.helloworld.R;
 
 public class DataStorageActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button mBtnShared;
+    private Button mBtnShared, mBtnFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_storage);
         mBtnShared = findViewById(R.id.btn_shared);
+        mBtnFile= findViewById(R.id.btn_file);
+
         mBtnShared.setOnClickListener(this);
+        mBtnFile.setOnClickListener(this);
     }
 
     @Override
@@ -28,7 +31,7 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
                 intent = new Intent(this, SharedActivity.class);
                 break;
             case R.id.btn_file:
-
+                intent = new Intent(this, FileActivity.class);
                 break;
         }
 

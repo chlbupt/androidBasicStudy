@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HelloWorld"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".datastorage.FileActivity"
+            android:exported="true" />
+        <activity
             android:name=".datastorage.SharedActivity"
             android:exported="true" />
         <activity
