@@ -8,13 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtnUI;
+    private Button mBtnUI,mBtnEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mBtnUI = findViewById(R.id.btn_ui);
+        mBtnEvent = findViewById(R.id.btn_event);
 
         setListeners();
     }
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void setListeners(){
         OnClick onClick = new OnClick();
         mBtnUI.setOnClickListener(onClick);
+        mBtnEvent.setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener {
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
             switch (view.getId()){
                 case R.id.btn_ui:
                     intent = new Intent(MainActivity.this, UIActivity.class);
+                    break;
+                case R.id.btn_event:
+                    intent = new Intent(MainActivity.this, EventActivity.class);
                     break;
             }
             startActivity(intent);

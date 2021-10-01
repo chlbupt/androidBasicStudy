@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HelloWorld"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EventActivity"
+            android:exported="true" />
+        <activity
             android:name=".fragment.ContainerActivity"
             android:exported="true" />
         <activity
