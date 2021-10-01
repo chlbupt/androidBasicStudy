@@ -3,6 +3,7 @@ package com.skypan.helloworld.fragment;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,6 +23,11 @@ public class AFragment extends Fragment {
     private TextView mTvTitle;
     private Button mBtnChange, mBtnReset, mBtnMessage;
     private BFragment bFragment;
+    private OnMessageClick onMessageClick;
+
+    public interface OnMessageClick{
+        void onClick(String text);
+    };
 
     public static AFragment newInstance(String title) {
         AFragment aFragment = new AFragment();
@@ -42,13 +48,15 @@ public class AFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Log.d("AFragment", "----onViewCreated----");
         mTvTitle = view.findViewById(R.id.tv_title);
         mBtnChange = view.findViewById(R.id.btn_change);
         mBtnReset = view.findViewById(R.id.btn_reset);
         mBtnMessage = view.findViewById(R.id.btn_message);
 
         mBtnMessage.setOnClickListener((v) -> {
-            ((ContainerActivity)getActivity()).setData("你好");
+//            ((ContainerActivity)getActivity()).setData("你好");
+            onMessageClick.onClick("你好吗，贱贱");
         });
 
         mBtnChange.setOnClickListener((v) -> {
@@ -70,8 +78,19 @@ public class AFragment extends Fragment {
 
         if (getArguments() != null) {
             mTvTitle.setText(getArguments().getString("title"));
+            mTvTitle.setTypeface(Typeface.MONOSPACE, Typeface.NORMAL);
         }
 
     }
 
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        Log.d("AFragment", "----onAttach----");
+        try {
+            onMessageClick = (OnMessageClick) context;
+        }catch (ClassCastException e){
+            throw new ClassCastException("Activity 必须实现 IOnMessageClick 接口");
+        }
+    }
 }
