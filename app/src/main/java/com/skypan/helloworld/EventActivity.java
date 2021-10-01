@@ -2,6 +2,7 @@ package com.skypan.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -9,8 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class EventActivity extends AppCompatActivity{
-    private Button mBtnClick, mBtnMy;
+public class EventActivity extends AppCompatActivity {
+    private Button mBtnClick, mBtnMy, mBtnHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,15 @@ public class EventActivity extends AppCompatActivity{
 
         mBtnClick = findViewById(R.id.btn_click);
         mBtnMy = findViewById(R.id.btn_my);
+        mBtnHandler = findViewById(R.id.btn_handler);
+
+        mBtnHandler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EventActivity.this, HandlerActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mBtnMy.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -37,7 +47,7 @@ public class EventActivity extends AppCompatActivity{
             Toast.makeText(this, "...click...", Toast.LENGTH_SHORT).show();
         });
         // 内部类
-         mBtnClick.setOnClickListener(new OnClick());
+        mBtnClick.setOnClickListener(new OnClick());
 
         // 类自身
 //        mBtnClick.setOnClickListener(this);
@@ -72,7 +82,7 @@ public class EventActivity extends AppCompatActivity{
     }
 
     // 通过标签绑定
-    public void show(View v){
+    public void show(View v) {
         switch (v.getId()) {
             case R.id.btn_click:
                 Toast.makeText(EventActivity.this, "click...", Toast.LENGTH_SHORT).show();
