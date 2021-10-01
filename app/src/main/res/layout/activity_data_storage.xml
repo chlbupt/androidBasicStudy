@@ -5,27 +5,18 @@
     android:layout_height="match_parent"
     >
 
-    <Button
-        android:id="@+id/btn_ui"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="UI"
-        android:textAllCaps="false"
-        />
 
     <Button
-        android:id="@+id/btn_event"
+        android:id="@+id/btn_shared"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="事件机制"
         android:textAllCaps="false"
-        />
+        android:text="SharedPreferences" />
 
     <Button
-        android:id="@+id/btn_data"
+        android:id="@+id/btn_file"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="数据存储"
-        android:textAllCaps="false"
-        />
+        android:text="File"
+        android:textAllCaps="false"/>
 </LinearLayout>
