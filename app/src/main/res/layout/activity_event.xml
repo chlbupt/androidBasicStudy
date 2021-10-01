@@ -11,4 +11,12 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="click me" />
+
+    <com.skypan.helloworld.widget.MyButton
+        android:id="@+id/btn_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="my button"
+        android:textAllCaps="false"
+        />
 </LinearLayout>
