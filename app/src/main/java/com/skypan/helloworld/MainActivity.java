@@ -10,10 +10,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.skypan.helloworld.broadcast.BroadActivity;
 import com.skypan.helloworld.datastorage.DataStorageActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtnUI, mBtnEvent, mBtnData;
+    private Button mBtnUI, mBtnEvent, mBtnData, mBtnBroadcast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnUI = findViewById(R.id.btn_ui);
         mBtnEvent = findViewById(R.id.btn_event);
         mBtnData = findViewById(R.id.btn_data);
+        mBtnBroadcast = findViewById(R.id.btn_broadcast);
 
         setListeners();
 
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnUI.setOnClickListener(onClick);
         mBtnEvent.setOnClickListener(onClick);
         mBtnData.setOnClickListener(onClick);
+        mBtnBroadcast.setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener {
@@ -49,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_data:
                     intent = new Intent(MainActivity.this, DataStorageActivity.class);
+                    break;
+                case R.id.btn_broadcast:
+                    intent = new Intent(MainActivity.this, BroadActivity.class);
                     break;
             }
             startActivity(intent);

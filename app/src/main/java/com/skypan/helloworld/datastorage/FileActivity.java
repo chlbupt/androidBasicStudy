@@ -2,6 +2,7 @@ package com.skypan.helloworld.datastorage;
 
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -55,7 +56,12 @@ public class FileActivity extends AppCompatActivity {
             // 外部存储
             File dir = new File(Environment.getExternalStorageDirectory(), "skypan");
             if (!dir.exists()) {
-                dir.mkdirs();
+                boolean mkdirs = dir.mkdirs();
+                if(mkdirs){
+                    Log.e("TAG", "文件夹创建成功");
+                }else{
+                    Log.e("TAG", "文件夹创建失败");
+                }
             }
             File file = new File(dir, mFileName);
             if (!file.exists()) {
