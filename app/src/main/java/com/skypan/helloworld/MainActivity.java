@@ -1,20 +1,20 @@
 package com.skypan.helloworld;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import com.skypan.helloworld.animate.AnimateActivity;
 import com.skypan.helloworld.broadcast.BroadActivity;
 import com.skypan.helloworld.datastorage.DataStorageActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtnUI, mBtnEvent, mBtnData, mBtnBroadcast;
+    private Button mBtnUI, mBtnEvent, mBtnData, mBtnBroadcast, mBtnAnimate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnEvent = findViewById(R.id.btn_event);
         mBtnData = findViewById(R.id.btn_data);
         mBtnBroadcast = findViewById(R.id.btn_broadcast);
+        mBtnAnimate = findViewById(R.id.btn_animate);
 
         setListeners();
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnEvent.setOnClickListener(onClick);
         mBtnData.setOnClickListener(onClick);
         mBtnBroadcast.setOnClickListener(onClick);
+        mBtnAnimate.setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener {
@@ -55,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_broadcast:
                     intent = new Intent(MainActivity.this, BroadActivity.class);
+                    break;
+                case R.id.btn_animate:
+                    intent = new Intent(MainActivity.this, AnimateActivity.class);
                     break;
             }
             startActivity(intent);

@@ -16,6 +16,12 @@
         android:theme="@style/Theme.HelloWorld"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".animate.AnimateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".animate.ObjectAnimateActivity"
+            android:exported="true" />
+        <activity
             android:name=".broadcast.BroadActivity2"
             android:exported="true" />
         <activity
