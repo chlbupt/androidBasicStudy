@@ -74,4 +74,22 @@
         >
 
     </TextView>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="微信登录"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ripple_btn_wechat"
+        android:drawablePadding="10dp"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+
+        android:layout_below="@id/tv_1"
+        />
 </RelativeLayout>
