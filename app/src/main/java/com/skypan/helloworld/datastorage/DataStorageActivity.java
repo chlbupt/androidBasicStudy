@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.skypan.helloworld.R;
 
 public class DataStorageActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button mBtnShared, mBtnFile;
+    private Button mBtnShared, mBtnFile, mBtnSqlite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +18,11 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_data_storage);
         mBtnShared = findViewById(R.id.btn_shared);
         mBtnFile= findViewById(R.id.btn_file);
+        mBtnSqlite = findViewById(R.id.btn_sqlite);
 
         mBtnShared.setOnClickListener(this);
         mBtnFile.setOnClickListener(this);
+        mBtnSqlite.setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +34,9 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btn_file:
                 intent = new Intent(this, FileActivity.class);
+                break;
+            case R.id.btn_sqlite:
+                intent = new Intent(this, SQLiteActivity.class);
                 break;
         }
 

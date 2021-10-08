@@ -16,6 +16,9 @@
         android:theme="@style/Theme.HelloWorld"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".datastorage.SQLiteActivity"
+            android:exported="true" />
+        <activity
             android:name=".animate.AnimateActivity"
             android:exported="true" />
         <activity
